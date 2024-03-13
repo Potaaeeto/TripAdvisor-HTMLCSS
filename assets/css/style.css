@@ -96,6 +96,8 @@ span {
   color: #333333;
 }
 
+/* ------------ */
+
 .things-to-do {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -178,6 +180,8 @@ span {
   color: black;
 }
 
+/* ------------ */
+
 .description {
   margin-top: 40px;
   margin-bottom: 70px;
@@ -193,9 +197,15 @@ span {
   margin-bottom: 30px;
 }
 
+.infos > p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #333333;
+}
+
 .pics {
-  width: calc(50%);
-  margin-left: 140px;
+  width: 40%;
+  /* margin-left: 140px; */
 }
 
 .pics > div:first-child {
@@ -223,7 +233,7 @@ span {
 }
 
 .pics > div:last-child {
-  /* border: 2px solid red; */
+  border: 2px solid red;
   border-radius: 0 0 16px 16px;
 }
 
@@ -232,6 +242,8 @@ span {
   width: 100%;
   object-fit: cover;
 }
+
+/* ------------ */
 
 .section-1 {
   border: 2px solid red;
@@ -250,4 +262,10 @@ footer {
 footer img {
   height: 40px;
   margin-right: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-family: TS-Med, sans-serif;
 }
