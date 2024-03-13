@@ -280,8 +280,6 @@ span {
 
 .carrousel1 div:first-child {
   border: 2px solid red;
-  /* Mettre le parent en position `relative` sinon le positionnement se fera en par rapport à la fenêtre du navigateur  */
-  position: relative;
 }
 
 .carrousel1 img {
@@ -289,6 +287,8 @@ span {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
+  /* Mettre le parent en position `relative` sinon le positionnement se fera en par rapport à la fenêtre du navigateur  */
+  position: relative;
 }
 
 .heart {
