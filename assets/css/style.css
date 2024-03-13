@@ -1,0 +1,252 @@
+/* ------ GENERAL ------ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: TS-Reg, sans-serif;
+  background-color: white;
+}
+
+.container {
+  width: 1135px;
+  margin: 0 auto; /* margin vertical de 0 et horizontal auto*/
+}
+
+h1 {
+  font-family: TS-Med, sans-serif;
+  font-size: 54px;
+  color: #ff5d5d;
+}
+
+h2 {
+  font-family: TS-Med, sans-serif;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: TS-Med, sans-serif;
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* ------ HEADER ----- */
+
+header {
+  /* border: 2px solid red; */
+  height: 60px;
+  margin-bottom: 40px;
+}
+
+header > div {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 40px;
+}
+
+.nav-header a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-header a:not(:first-child) {
+  /* border: 2px solid green; */
+  margin-left: 20px;
+}
+
+.nav-header button {
+  border: none;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  font-size: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.nav-header i {
+  margin-right: 10px;
+}
+
+/* ------ MAIN ----- */
+
+span {
+  color: black;
+}
+
+.revenu-paragraph {
+  font-size: 14px;
+  color: #333333;
+  margin-top: 15px;
+}
+
+.revenu-paragraph a {
+  font-size: 14px;
+  color: #333333;
+}
+
+.things-to-do {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.stuff {
+  flex: 1;
+  border: 1px solid black;
+  border-radius: 13px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stuff a {
+  font-family: TS-Med, sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+.images-jeju img {
+  object-fit: cover;
+}
+
+.images-jeju {
+  /* border: 2px solid red; */
+  height: 430px;
+  display: flex;
+}
+
+.images-jeju > .col-1 {
+  margin-right: 2px;
+  flex: 1;
+}
+
+.images-jeju > .col-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.images-jeju > .col-2 {
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.images-jeju > .col-2 img {
+  height: calc(50% - 1px);
+  margin-bottom: 2px;
+}
+
+.menu {
+  /* border: 2px solid red; */
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu > nav {
+  font-size: 12px;
+}
+
+.menu > nav a {
+  color: #545454;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.menu > nav span {
+  color: #545454;
+  margin-right: 5px;
+}
+
+.menu div p {
+  font-size: 12px;
+  color: black;
+}
+
+.description {
+  margin-top: 40px;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infos {
+  width: 50%;
+}
+
+.infos > h2 {
+  margin-bottom: 30px;
+}
+
+.pics {
+  width: calc(50%);
+  margin-left: 140px;
+}
+
+.pics > div:first-child {
+  padding: 20px;
+  border-radius: 16px 16px 0 0;
+  background-color: #ff5d5d;
+}
+
+.pics > div:first-child h2 {
+  margin-bottom: 20px;
+}
+
+.pics > div:first-child p {
+  margin-bottom: 20px;
+}
+
+.pics > div:first-child button {
+  border: none;
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.pics > div:last-child {
+  /* border: 2px solid red; */
+  border-radius: 0 0 16px 16px;
+}
+
+.pics > div:last-child img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-1 {
+  border: 2px solid red;
+  /* display: flex; */
+}
+
+/* ------ FOOTER ----- */
+footer {
+  background-color: #faf1ed;
+  height: 156px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  height: 40px;
+  margin-right: 10px;
+}
