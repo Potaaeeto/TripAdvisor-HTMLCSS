@@ -118,24 +118,17 @@ span {
   text-decoration: none;
 }
 
-.images-jeju img {
-  object-fit: cover;
-}
+/* ------------ */
 
 .images-jeju {
   /* border: 2px solid red; */
   height: 430px;
   display: flex;
+  gap: 2px;
 }
 
 .images-jeju > .col-1 {
-  margin-right: 2px;
   flex: 1;
-}
-
-.images-jeju > .col-1 img {
-  width: 100%;
-  height: 100%;
 }
 
 .images-jeju > .col-2 {
@@ -148,6 +141,14 @@ span {
   height: calc(50% - 1px);
   margin-bottom: 2px;
 }
+
+.images-jeju img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------------ */
 
 .menu {
   /* border: 2px solid red; */
