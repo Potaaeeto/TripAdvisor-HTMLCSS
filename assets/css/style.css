@@ -271,24 +271,37 @@ span {
   color: #545454;
 }
 
-.carrousel1 {
+.se-divertir .col-2 {
+  /* border: 2px solid red; */
+  display: flex;
+  /* Propriété flex-wrap pour les laisser sur une seule ligne */
+  flex-wrap: nowrap;
+  /* si parent a une taille définie et que vous ne voulez pas voir ses enfants sortir de son cadre */
+  overflow: hidden;
+  overflow-x: scroll;
+  gap: 20px;
+}
+
+.carrousel {
+  /* NÉCESSAIRE POUR NE PAS COMPRESSER LES ITEMS */
+  flex-shrink: 0;
   width: 250px;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.carrousel1 div:first-child {
+.carrousel div:first-child {
   border: 2px solid red;
+  /* Mettre le parent en position `relative` sinon le positionnement se fera en par rapport à la fenêtre du navigateur  */
+  position: relative;
 }
 
-.carrousel1 img {
+.carrousel img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
-  /* Mettre le parent en position `relative` sinon le positionnement se fera en par rapport à la fenêtre du navigateur  */
-  position: relative;
 }
 
 .heart {
@@ -344,7 +357,7 @@ span {
   color: #333333;
 }
 
-.carrousel1 p {
+.carrousel p {
   font-size: 14px;
   color: #333333;
   line-height: normal;
