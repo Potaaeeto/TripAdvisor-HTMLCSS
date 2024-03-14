@@ -39,6 +39,10 @@ p {
   line-height: 24px;
 }
 
+span {
+  color: black;
+}
+
 /* POUR MASQUER LA SCROLLBAR */
 ::-webkit-scrollbar {
   width: 0;
@@ -91,10 +95,6 @@ header img {
 }
 
 /* ------ MAIN ----- */
-
-span {
-  color: black;
-}
 
 .revenu-paragraph {
   font-size: 14px;
@@ -221,7 +221,7 @@ span {
 
 .pics > div:first-child {
   /* border: 2px solid red; */
-  padding: 20px;
+  padding: 32px;
   border-radius: 16px 16px 0 0;
   background-color: #ff5d5d;
 }
@@ -245,7 +245,7 @@ span {
 }
 
 .pics img {
-  height: 100%;
+  height: 190px;
   width: 100%;
   object-fit: cover;
   border-radius: 0 0 16px 16px;
@@ -296,7 +296,6 @@ span {
 }
 
 .carrousel {
-  border: 2px solid red;
   /* NÉCESSAIRE POUR NE PAS COMPRESSER LES ITEMS */
   flex-shrink: 0;
   width: 260px;
@@ -306,6 +305,8 @@ span {
 }
 
 .carrousel div:first-child {
+  /* border: 2px solid red; */
+  height: 200px;
   margin-bottom: 5px;
   /* Mettre le parent en position `relative` sinon le positionnement se fera en par rapport à la fenêtre du navigateur  */
   position: relative;
@@ -375,6 +376,61 @@ span {
   font-size: 14px;
   color: #333333;
   line-height: normal;
+}
+
+/* ------------ */
+
+.section-2 {
+  margin-bottom: 120px;
+}
+
+.section-2 h2 {
+  margin-bottom: 30px;
+}
+
+.voyage-pics {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column h4 {
+  margin-top: 5px;
+  line-height: 22px;
+}
+
+.column img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.column p {
+  font-size: 14px;
+}
+
+.column > div {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.column > div img {
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  border: 1px solid grey;
+  background-color: #ecf9fa;
+  margin-right: 5px;
+}
+
+.column > div p:last-child {
+  font-family: TS-Med, sans-serif;
 }
 
 /* ------ FOOTER ----- */
