@@ -257,12 +257,12 @@ span {
   margin-bottom: 25px;
 }
 
-.se-divertir {
+.coulissade-desc {
   display: flex;
   margin-bottom: 100px;
 }
 
-.se-divertir .col-1 {
+.coulissade-desc .col-1 {
   /* border: 2px solid green; */
   /* width: 50%; */
   flex: 1;
@@ -272,15 +272,15 @@ span {
   margin-right: 30px;
 }
 
-.se-divertir > .col-1 p {
+.coulissade-desc > .col-1 p {
   line-height: 18px;
 }
 
-.se-divertir > .col-1 a {
+.coulissade-desc > .col-1 a {
   color: #545454;
 }
 
-.se-divertir .col-2 {
+.coulissade-desc .col-2 {
   /* border: 2px solid red; */
   flex: 3;
   display: flex;
