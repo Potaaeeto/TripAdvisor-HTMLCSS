@@ -141,6 +141,12 @@ header img {
   text-decoration: none;
 }
 
+.things-to-do > div:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
 /* ------------ */
 
 .images-jeju {
