@@ -9,8 +9,9 @@ body {
 }
 
 .container {
-  width: 1135px;
+  width: 1175px;
   margin: 0 auto; /* margin vertical de 0 et horizontal auto*/
+  padding: 20px;
 }
 
 h1 {
@@ -54,6 +55,11 @@ span {
 header {
   height: 60px;
   margin-bottom: 40px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 header > div {
@@ -106,27 +112,38 @@ header img {
 
 /* ------ MAIN ----- */
 
-.revenu-paragraph {
+.container > p {
   font-size: 14px;
   color: #333333;
   margin-top: 15px;
 }
 
-.revenu-paragraph a {
+.container > p a {
+  /* border: 1px solid red; */
   font-size: 14px;
   color: #333333;
 }
 
 /* ------------ */
 
-.things-to-do {
+.navigation {
   margin-top: 30px;
   margin-bottom: 30px;
   display: flex;
   gap: 10px;
 }
 
-.stuff {
+.navigation > div:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+
+.navigation > div:hover a {
+  color: white;
+}
+
+.activities {
   flex: 1;
   border: 1px solid black;
   border-radius: 13px;
@@ -135,16 +152,10 @@ header img {
   justify-content: space-between;
 }
 
-.stuff a {
+.activities a {
   font-family: TS-Med, sans-serif;
   color: black;
   text-decoration: none;
-}
-
-.things-to-do > div:hover {
-  color: white;
-  background-color: black;
-  cursor: pointer;
 }
 
 /* ------------ */
@@ -476,4 +487,17 @@ footer a {
   text-decoration: none;
   color: black;
   font-family: TS-Med, sans-serif;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1184px) {
+}
+@media (max-width: 1024px) {
+  /* NAV HEADER */
+  .nav-header i {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
 }
