@@ -209,6 +209,11 @@ header img {
   object-fit: cover;
 }
 
+.images-jeju img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 .images-jeju > .col-1 img {
   /* border: 2px solid red; */
   border-top-left-radius: 10px;
@@ -383,7 +388,8 @@ header img {
 .carrousel {
   /* NÉCESSAIRE POUR NE PAS COMPRESSER LES ITEMS */
   flex-shrink: 0;
-  width: 260px;
+  /* width: 260px; */
+  width: calc((100% - 50px) / 3);
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -391,7 +397,7 @@ header img {
 
 .carrousel div:first-child {
   /* border: 2px solid red; */
-  height: 200px;
+  height: 190px;
   margin-bottom: 5px;
   /* Mettre le parent en position `relative` sinon le positionnement se fera en par rapport à la fenêtre du navigateur  */
   position: relative;
@@ -402,6 +408,16 @@ header img {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.carrousel img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.carrousel h4:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .heart {
@@ -476,28 +492,44 @@ header img {
 .voyage-pics {
   /* border: 1px solid red; */
   display: flex;
+  overflow: scroll;
+  scrollbar-width: none;
   gap: 20px;
 }
 
 .column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+  flex-shrink: 0;
+  width: calc((100% - 30px) / 3);
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .column h4 {
-  margin-top: 5px;
   line-height: 22px;
+  margin-top: 5px;
+  margin-bottom: 8px;
 }
 
-.column img {
-  height: 100%;
+.column > img {
   width: 100%;
+  aspect-ratio: 35 / 27;
   object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.column > img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column h4:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .column p {
   font-size: 14px;
+  margin-bottom: 5px;
 }
 
 .column > div {
@@ -626,6 +658,16 @@ footer a {
     flex: 1;
     height: auto;
   }
+
+  /* CARROUSSEL */
+  .carrousel div:first-child {
+    height: 130px;
+  }
+
+  /* GUIDE DES VOYAGEURS CARROUSSELS */
+  .column {
+    width: calc((100% - 30px) / 2.5);
+  }
 }
 
 @media (max-width: 768px) {
@@ -692,5 +734,38 @@ footer a {
   .map-img {
     height: 188px;
     flex: none;
+  }
+
+  /* CARROUSSEL */
+
+  .coulissade-desc {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .coulissade-desc > .col-1 h3 {
+    margin-bottom: 18px;
+  }
+
+  .coulissade-desc .col-1 {
+    gap: 10px;
+  }
+
+  .carrousel {
+    width: calc((100% - 30px) / 1.5);
+  }
+
+  .carrousel > div:first-child {
+    height: 280px;
+  }
+
+  /* GUIDE DES VOYAGEURS CARROUSSELS */
+  .section-2 {
+    /* border: 2px solid red; */
+    margin-top: 100px;
+  }
+  .column {
+    width: calc((100% - 30px) / 1.5);
   }
 }
