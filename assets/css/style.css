@@ -572,8 +572,8 @@ footer a {
 }
 
 /* ------ MODAL ----- */
-.hidden {
-  display: none;
+.disable {
+  overflow: hidden;
 }
 
 .modal {
@@ -584,6 +584,10 @@ footer a {
   position: fixed;
   top: 0;
   z-index: 2;
+}
+
+.hidden {
+  display: none;
 }
 
 .form-container {
@@ -615,6 +619,11 @@ form {
   right: 20px;
 }
 
+.form-container i:hover {
+  color: black;
+  cursor: pointer;
+}
+
 .form-container p {
   font-size: 24px;
   font-weight: bold;
@@ -638,6 +647,11 @@ textarea {
   font-weight: bold;
   border: none;
   border-radius: 6px;
+}
+
+#submit-btn:hover {
+  background-color: #35e1a1;
+  cursor: pointer;
 }
 
 /* ------  MEDIA QUERIES ----- */
