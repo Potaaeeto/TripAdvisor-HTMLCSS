@@ -15,10 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Envoyer le formulaire au back
-  // Function to empty the form
-  const cleanForm = () => {
-    form.reset();
-  };
 
   // Quand le submit bouton du formulaire est envoyé
   form.addEventListener("submit", async (event) => {
@@ -35,15 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const response = await axios.post("http://localhost:3000/form", data);
 
       if (response.status === 200) {
-        alert("Votre formulaire a bien été envoyé");
-        cleanForm();
+        alert("Le formulaire a bien été envoyé");
       }
     } catch (error) {
       if (error.response.data.message === "Missing parameters") {
         alert("Veuillez remplir tous les champs du formulaire");
       } else {
-        alert("Une erreur est survenue");
-        cleanForm();
+        alert("Erreur!");
       }
     }
   });
