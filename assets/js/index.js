@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("document loaded");
 
+  body.classList.remove("disable");
+
   // Quand le bouton "Connectez-vous" est cliqué
   document.querySelector(".btn-signup").addEventListener("click", () => {
     // Display modal
