@@ -8,7 +8,8 @@ _This website is just an exercice and will not be deployed or use, beside as a p
 
 Check the live demo [here](https://potaaeeto.github.io/TripAdvisor-HTMLCSS/) and test it! 😊
 It is fully responsive for all devices, built using HTML, CSS and a little bit of JavaScript.
-<img src="./assets/imgs/desktop.png" alt="desktop jeju island" width="200"/>
+
+<img src="./assets/imgs/desktop.png" alt="desktop jeju island" width="500"/>
 
 ## Tasks 🫠
 
