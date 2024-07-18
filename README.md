@@ -1,8 +1,8 @@
 # TripAdvisor - Frontend Clone 🌏
 
-As part of my training at [Le Reacteur](https://www.lereacteur.io/) to become a full-stack developer, we were to recreate a clone of [TripAdvisor](https://www.tripadvisor.fr/)'old website.
+As part of my training at [Le Reacteur](https://www.lereacteur.io/) to become a full-stack developer, we were tasked with recreating a clone of [TripAdvisor](https://www.tripadvisor.fr/)'old website.
 
-_This website is just an exercice and will not be deployed or use, beside as a portfolio._
+_This website is just an exercise and will not be deployed or used, besides as a portfolio piece._
 
 ## Overview 🚀
 
@@ -12,7 +12,7 @@ It is fully responsive for all devices, built using HTML, CSS and a little bit o
 
 <img src="./assets/imgs/desktop.png" alt="desktop jeju island" width="500"/>
 
-## Tasks 🫠
+## Tasks 🧐
 
 ✓ Complete integration, responsive frontend (CSS only : flexbox and carousel)
 
