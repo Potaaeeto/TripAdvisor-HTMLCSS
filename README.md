@@ -2,7 +2,7 @@
 
 As part of my training at [Le Reacteur](https://www.lereacteur.io/) to become a full-stack developer, we were tasked with recreating a clone of [TripAdvisor](https://www.tripadvisor.fr/)'old website.
 
-_This website is just an exercise and will not be deployed or used, besides as a portfolio piece._
+_This website is just an exercise and will not be deployed or used, besides as a portfolio piece. All the images used are not my property._
 
 ## Overview 🚀
 
@@ -39,4 +39,7 @@ To install the website, follow these steps:
 
 ```bash
 git clone https://github.com/Potaaeeto/TripAdvisor-HTMLCSS.git
+```
+```bash
+cd TripAdvisor-HTMLCSS
 ```
